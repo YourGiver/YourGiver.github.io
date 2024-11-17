@@ -1,6 +1,6 @@
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 
-const notes = [
+const notes =[
   {f:262,d:.5,t:"Hap",p:p1},
   {f:262,d:.5,t:"py&nbsp;",p:p1},
   {f:294,d:1,t:"Birth",p:p1},

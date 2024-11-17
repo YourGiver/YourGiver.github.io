@@ -105,5 +105,5 @@ input[type="range"]::-ms-fill-lower {
 }
 
 input[type="range"]::-ms-fill-upper {
-  background-color: black;
+   background-color: black;
 }
