@@ -1303,7 +1303,7 @@ body {
 
 @media (max-width: 600px) {
   body {
-    align-items: center;
+    align-items: center; /* Cambia flex-end por center */
     min-height: 100vh;
     overflow-x: hidden;
   }
