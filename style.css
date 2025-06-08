@@ -10,6 +10,12 @@
   --dark-color: #000;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   align-items: flex-end;
@@ -18,6 +24,14 @@ body {
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
+}
+
+body.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center;
+  min-height: 100vh;
 }
 
 .night {
@@ -1303,14 +1317,12 @@ body {
 
 @media (max-width: 600px) {
   body {
-    align-items: center; /* Cambia flex-end por center */
-    min-height: 100vh;
-    overflow-x: hidden;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    padding-top: 70vh;
   }
+
   .flowers {
-    transform: scale(0.7);
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    transform: scale(1) translateY(0);
   }
 }
