@@ -1300,3 +1300,17 @@ body {
   -webkit-animation-play-state: paused !important;
           animation-play-state: paused !important;
 }
+
+@media (max-width: 600px) {
+  body {
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .flowers {
+    transform: scale(0.7);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
